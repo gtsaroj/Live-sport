@@ -1,5 +1,5 @@
 "use client";
-import { OptimizeImg } from "@/helpers";
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useRef, useState } from "react";
 

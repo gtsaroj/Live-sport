@@ -1,0 +1,580 @@
+{
+  "live": [
+    {
+      "id": "1",
+      "title": "El Clasico",
+      "match": [
+        {
+          "id": "m1",
+          "title": "Barcelona",
+          "image": "/barcelona.png",
+          "goal": 2
+        },
+        {
+          "id": "m2",
+          "title": "Real Madrid",
+          "image": "/realmadrid.png",
+          "goal": 3
+        }
+      ],
+      "status": "FINISHED",
+      "matchLink": "https://example.com/match/1",
+      "isViewed": true,
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "id": "2",
+      "title": "Champions League Final",
+      "match": [
+        {
+          "id": "m3",
+          "title": "Manchester City",
+          "image": "/barcelona.png",
+          "goal": 1
+        },
+        {
+          "id": "m4",
+          "title": "Bayern Munich",
+          "image": "/barcelona.png",
+          "goal": 2
+        }
+      ],
+      "status": "FINISHED",
+      "matchLink": "https://example.com/match/2",
+      "isViewed": false,
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "id": "3",
+      "title": "Premier League",
+      "match": [
+        {
+          "id": "m5",
+          "title": "Liverpool",
+          "image": "/barcelona.png",
+          "goal": 3
+        },
+        {
+          "id": "m6",
+          "title": "Chelsea",
+          "image": "/barcelona.png",
+          "goal": 3
+        }
+      ],
+      "status": "ONGOING",
+      "matchLink": "https://example.com/match/3",
+      "isViewed": false,
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "id": "4",
+      "title": "La Liga",
+      "match": [
+        {
+          "id": "m7",
+          "title": "Atletico Madrid",
+          "image": "/barcelona.png",
+          "goal": 1
+        },
+        {
+          "id": "m8",
+          "title": "Sevilla",
+          "image": "/barcelona.png",
+          "goal": 0
+        }
+      ],
+      "status": "UPCOMING",
+      "matchLink": "https://example.com/match/4",
+      "isViewed": false,
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "id": "5",
+      "title": "Bundesliga",
+      "match": [
+        {
+          "id": "m9",
+          "title": "Dortmund",
+          "image": "/barcelona.png",
+          "goal": 4
+        },
+        {
+          "id": "m10",
+          "title": "Leipzig",
+          "image": "/barcelona.png",
+          "goal": 2
+        }
+      ],
+      "status": "FINISHED",
+      "matchLink": "https://example.com/match/5",
+      "isViewed": true,
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    }
+  ],
+  "highlight": [
+    {
+      "id": "1",
+      "title": "Epic Showdown",
+      "matchLink": "https://www.youtube.com/embed/champions_highlight",
+      "image": "https://picsum.photos/seed/match1/800/450",
+      "adLink": "https://example.com/ad/1",
+      "description": "An incredible match showcasing epic moments and stunning goals from the Champions League.",
+      "isViewed": false,
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "id": "2",
+      "title": "Goal Fest",
+      "matchLink": "https://www.youtube.com/embed/laliga_highlight",
+      "image": "https://picsum.photos/seed/match2/800/450",
+      "adLink": "https://example.com/ad/2",
+      "description": "A high-scoring game that turned into a festival of goals in LaLiga.",
+      "isViewed": false,
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "id": "3",
+      "title": "Defensive Masterclass",
+      "matchLink": "https://www.youtube.com/embed/epl_highlight",
+      "image": "https://picsum.photos/seed/match3/800/450",
+      "adLink": "https://example.com/ad/3",
+      "description": "A tactical battle in the EPL where defensive strategies stole the show.",
+      "isViewed": false,
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "id": "4",
+      "title": "Last-Minute Thriller",
+      "matchLink": "https://www.youtube.com/embed/champions_highlight",
+      "image": "https://picsum.photos/seed/match4/800/450",
+      "adLink": "https://example.com/ad/4",
+      "description": "A nail-biting finish from the Champions League that kept fans on the edge until the final whistle.",
+      "isViewed": false,
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "id": "5",
+      "title": "Rising Stars",
+      "matchLink": "https://www.youtube.com/embed/laliga_highlight",
+      "image": "https://picsum.photos/seed/match5/800/450",
+      "adLink": "https://example.com/ad/5",
+      "description": "Young talents made a remarkable impact with their performance in LaLiga.",
+      "isViewed": false,
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "id": "6",
+      "title": "Rivalry Renewed",
+      "matchLink": "https://www.youtube.com/embed/epl_highlight",
+      "image": "https://picsum.photos/seed/match6/800/450",
+      "adLink": "https://example.com/ad/6",
+      "description": "A classic EPL rivalry match that delivered both passion and high drama.",
+      "isViewed": false,
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "id": "7",
+      "title": "Comeback Kings",
+      "matchLink": "https://www.youtube.com/embed/champions_highlight",
+      "image": "https://picsum.photos/seed/match7/800/450",
+      "adLink": "https://example.com/ad/7",
+      "description": "An astonishing comeback in the Champions League filled with determination and skill.",
+      "isViewed": false,
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "id": "8",
+      "title": "Tactical Battle",
+      "matchLink": "https://www.youtube.com/embed/laliga_highlight",
+      "image": "https://picsum.photos/seed/match8/800/450",
+      "adLink": "https://example.com/ad/8",
+      "description": "A game defined by strategic brilliance in LaLiga with every move counted.",
+      "isViewed": false,
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "id": "9",
+      "title": "Underdog Triumph",
+      "matchLink": "https://www.youtube.com/embed/epl_highlight",
+      "image": "https://picsum.photos/seed/match9/800/450",
+      "adLink": "https://example.com/ad/9",
+      "description": "An inspiring EPL victory that showcased the true spirit of the underdogs.",
+      "isViewed": false,
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "id": "10",
+      "title": "Champions Clash",
+      "matchLink": "https://www.youtube.com/embed/champions_highlight",
+      "image": "https://picsum.photos/seed/match10/800/450",
+      "adLink": "https://example.com/ad/10",
+      "description": "A marquee match in the Champions League with every moment brimming with action.",
+      "isViewed": false,
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    }
+  ],
+  "upcoming": [
+    {
+      "id": "1",
+      "matchTime": "2025-04-01T18:30:00Z",
+      "team": [
+        {
+          "name": "Barcelona",
+          "image": "https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg"
+        },
+        {
+          "name": "Real Madrid",
+          "image": "https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg"
+        }
+      ],
+      "venue": "Camp Nou",
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "id": "2",
+      "matchTime": "2025-04-02T20:00:00Z",
+      "team": [
+        {
+          "name": "Liverpool",
+          "image": "https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg"
+        },
+        {
+          "name": "Manchester City",
+          "image": "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg"
+        }
+      ],
+      "venue": "Anfield",
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "id": "3",
+      "matchTime": "2025-04-03T19:45:00Z",
+      "team": [
+        {
+          "name": "Atlético Madrid",
+          "image": "https://upload.wikimedia.org/wikipedia/en/f/f4/Atletico_Madrid_2017_logo.svg"
+        },
+        {
+          "name": "Juventus",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Juventus_FC_2017_logo.svg"
+        }
+      ],
+      "venue": "Wanda Metropolitano",
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "id": "4",
+      "matchTime": "2025-04-04T21:00:00Z",
+      "team": [
+        {
+          "name": "Bayern Munich",
+          "image": "https://upload.wikimedia.org/wikipedia/en/1/1b/FC_Bayern_München_logo_%282017%29.svg"
+        },
+        {
+          "name": "PSG",
+          "image": "https://upload.wikimedia.org/wikipedia/en/a/a7/Paris_Saint-Germain_F.C..svg"
+        }
+      ],
+      "venue": "Allianz Arena",
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "id": "5",
+      "matchTime": "2025-04-05T17:00:00Z",
+      "team": [
+        {
+          "name": "Arsenal",
+          "image": "https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg"
+        },
+        {
+          "name": "Chelsea",
+          "image": "https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+        }
+      ],
+      "venue": "Emirates Stadium",
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "id": "6",
+      "matchTime": "2025-04-06T16:30:00Z",
+      "team": [
+        {
+          "name": "Inter Milan",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/FC_Internazionale_Milano_2021.svg"
+        },
+        {
+          "name": "AC Milan",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Logo_of_AC_Milan.svg"
+        }
+      ],
+      "venue": "San Siro",
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "id": "7",
+      "matchTime": "2025-04-07T18:00:00Z",
+      "team": [
+        {
+          "name": "Manchester United",
+          "image": "https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg"
+        },
+        {
+          "name": "Tottenham",
+          "image": "https://upload.wikimedia.org/wikipedia/en/b/b4/Tottenham_Hotspur.svg"
+        }
+      ],
+      "venue": "Old Trafford",
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "id": "8",
+      "matchTime": "2025-04-08T19:00:00Z",
+      "team": [
+        {
+          "name": "Napoli",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/2/2d/SSC_Neapel.svg"
+        },
+        {
+          "name": "Borussia Dortmund",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Borussia_Dortmund_logo.svg"
+        }
+      ],
+      "venue": "Diego Armando Maradona Stadium",
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "id": "9",
+      "matchTime": "2025-04-09T20:30:00Z",
+      "team": [
+        {
+          "name": "Marseille",
+          "image": "https://upload.wikimedia.org/wikipedia/en/3/3d/Olympique_de_Marseille_logo.svg"
+        },
+        {
+          "name": "Lyon",
+          "image": "https://upload.wikimedia.org/wikipedia/en/c/c6/Olympique_Lyonnais.svg"
+        }
+      ],
+      "venue": "Stade Vélodrome",
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "id": "10",
+      "matchTime": "2025-04-10T18:45:00Z",
+      "team": [
+        {
+          "name": "Sevilla",
+          "image": "https://upload.wikimedia.org/wikipedia/en/3/3b/Sevilla_FC_logo.svg"
+        },
+        {
+          "name": "Benfica",
+          "image": "https://upload.wikimedia.org/wikipedia/en/a/a2/SL_Benfica_logo.svg"
+        }
+      ],
+      "venue": "Ramón Sánchez-Pizjuán Stadium",
+      "createdAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      },
+      "updatedAt": {
+        "_seconds": 1710000000,
+        "_nanoseconds": 0
+      }
+    }
+  ],
+  "ads": [
+    {
+      "id": "1",
+      "image": "/CR_ORG_1xbet-19017253.webp",
+      "link": "https://promo.example.com/offer1"
+    },
+    {
+      "id": "2",
+      "image": "/jatin-sapru.jpg",
+      "link": "https://promo.example.com/offer2"
+    },
+    {
+      "id": "3",
+      "image": "/photo_2022-08-02_13-15-29.webp",
+      "link": "https://promo.example.com/offer3"
+    },
+    {
+      "id": "4",
+      "image": "/CR_ORG_1xbet-19017253.webp",
+      "link": "https://promo.example.com/offer4"
+    },
+    {
+      "id": "5",
+      "image": "/jatin-sapru.jpg",
+      "link": "https://promo.example.com/offer5"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import "tailwindcss";
+
+
+:root {
+  --primary-color: #014f86;
+  --primary-dark: #013a63;
+  --primary-light: #2a6f97;
+
+  --secondary-color: #89c2d9;
+  --secondary-light: #a9d6e5;
+  --secondary-dark: #61a5c2;
+
+  --background-color: #eff3f4;
+  --foreground-color: #0d0e0f;
+  --secondary-foreground: #858a8b;
+}
+
+
+
+body {
+  color: var(--foreground-color) ;
+  background: var(--background-color);
+  color: var(--foreground);
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+::-webkit-scrollbar{
+  width: 0px;
+}

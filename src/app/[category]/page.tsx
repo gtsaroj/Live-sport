@@ -44,15 +44,15 @@ export default async function CategoryPage({ params }: { params: any }) {
         </TabsList>
 
         <TabsContent value="live">
-          <MatchGrid matches={liveMatches} type="live" />
+          <MatchGrid className="lg:grid-cols-4" matches={liveMatches} type="live" />
         </TabsContent>
 
         <TabsContent value="upcoming">
-          <MatchGrid matches={upcomingMatches} type="upcoming" />
+          <MatchGrid className="lg:grid-cols-4" matches={upcomingMatches} type="upcoming" />
         </TabsContent>
 
         <TabsContent value="highlights">
-          <MatchGrid matches={highlightMatches} type="highlight" />
+          <MatchGrid className="lg:grid-cols-4" matches={highlightMatches} type="highlight" />
         </TabsContent>
       </Tabs>
     </main>

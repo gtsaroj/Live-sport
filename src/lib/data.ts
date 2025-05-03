@@ -40,21 +40,21 @@ const mockMatches = [
       {
         name: "Barcelona",
         image:
-          "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/barcelona-vs-real-madrid-design-template-0c03cae56769f9e1a8eef017091f3a59_screen.jpg?ts=1698420692",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjjEff5OUSLgsahBGM46yHJ7ZY9TaXoVhrUA&s",
       },
       {
         name: "Real Madrid",
         image:
-          "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/barcelona-vs-real-madrid-design-template-0c03cae56769f9e1a8eef017091f3a59_screen.jpg?ts=1698420692",
+          "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/800px-Real_Madrid_CF.svg.png",
       },
     ],
     id: "f-live-2",
     title: "Barcelona vs Real Madrid",
     category: "football",
-    status: "live",
+    status: "highlight",
     image:
       "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/barcelona-vs-real-madrid-design-template-0c03cae56769f9e1a8eef017091f3a59_screen.jpg?ts=1698420692",
-    matchLink: "https://example.com/stream/f-live-2",
+    matchLink: "https://www.youtube.com/embed/oYHdKBfTwbE?si=HLtFjXEzZOa3VqWV",
     isViewed: false,
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
@@ -278,7 +278,7 @@ const mockMatches = [
     status: "highlight",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNEaURwUmrc1u9Ea9W_ieSEwAjA0OZ_ZwphQ&s",
-    matchLink: "https://example.com/stream/c-highlight-1",
+    matchLink: "https://topembed.pw/channel/SkySportsCricket[UK]",
     isViewed: false,
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),

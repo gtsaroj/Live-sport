@@ -34,7 +34,7 @@ export function MatchPlayer({match}: {match: any}) {
     >
       <iframe
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        src={match?.stream_url || "https://topembed.pw/channel/SkySportsCricket[UK]"}
+        src={match?.matchLink || "https://topembed.pw/channel/SkySportsCricket[UK]"}
         className="w-full aspect-video"
         allowFullScreen
         loading="lazy"

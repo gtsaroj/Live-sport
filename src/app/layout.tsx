@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { ThemeProvider } from "next-themes";
+import Clarity from "@microsoft/clarity";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  Clarity.init(process.env.NEXT_PROJECTID as string);
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -27,12 +29,12 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} min-h-screen bg-background`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-        <div className="flex flex-col min-h-screen">
-          <Header />
-          <div className="flex-1">{children}</div>
-          <Footer />
-        </div>
-     </ThemeProvider>
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            <div className="flex-1">{children}</div>
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

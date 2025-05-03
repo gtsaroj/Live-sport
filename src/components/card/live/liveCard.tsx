@@ -6,11 +6,16 @@ import { useRouter } from "next/navigation";
 
 import React from "react";
 
-export const LiveCard: React.FC<Model.MatchType> = ({ match, title, id }) => {
+export const LiveCard: React.FC<Model.MatchType> = ({
+  match,
+  title,
+  id = 1,
+  matchLink = "https://www.youtube.com/watch?v=x_ctk1SxN_E",
+}) => {
   const router = useRouter();
   return (
     <div
-      onClick={() => router.push(`live/${id}`)}
+      onClick={() => router.push(`match/${id || matchLink}`)}
       key={id}
       className=" cursor-pointer sm:min-w-[300px] min-w-[230px] shadow  flex flex-col items-stretch justify-start gap-2 w-full bg-white rounded-lg p-2 "
     >
@@ -20,7 +25,8 @@ export const LiveCard: React.FC<Model.MatchType> = ({ match, title, id }) => {
           <p className=" text-[12px] sm:text-[16px] ">{title} </p>
         </div>
         <p className="flex text-white  py-0.5 px-1 text-[12px] tracking-wide sm:text-sm rounded-full items-center justify-center bg-red-500 ">
-          <icons.dot className="text-white size-4 sm:size-5 animate-pulse  " /> Live
+          <icons.dot className="text-white size-4 sm:size-5 animate-pulse  " />{" "}
+          Live
         </p>
       </div>
       <div className="flex flex-col items-start justify-start gap-4 sm:gap-8">

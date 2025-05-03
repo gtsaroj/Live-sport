@@ -1,11 +1,13 @@
 "use client";
 import { OptimizeImg } from "@/helpers";
 import { icons } from "@/utils";
+import { useRouter } from "next/navigation";
 
 export const HightlightCard: React.FC<Model.highlight> = (data) => {
+  const router = useRouter();
   return (
     <a
-      href={data.adLink ?? data?.matchLink}
+      onClick={() => router.push(`match/${data?.id}`)}
       target="_blank"
       className="sm:min-w-[300px] min-w-[230px]  group/cursor relative h-full flex flex-col items-start justify-start gap-2 "
     >

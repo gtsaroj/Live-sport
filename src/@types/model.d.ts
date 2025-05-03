@@ -7,6 +7,7 @@ declare namespace Model {
   }
 
   interface MatchType {
+    description?: string;
     id?: string;
     title: string;
     match: Match[];
@@ -21,15 +22,17 @@ declare namespace Model {
   }
 
   interface Upcoming {
-    id: string;
+    description?: string;
+    id?: string;
     matchTime: string;
     team: { name: string; image: string }[];
     venue: string;
-    createdAt: Common.TimeStamp;
-    updatedAt: Common.TimeStamp;
+    createdAt?: Common.TimeStamp;
+    updatedAt?: Common.TimeStamp;
   }
 
   interface highlight {
+    description?: string;
     id?: string;
     title: string;
     matchLink: string;

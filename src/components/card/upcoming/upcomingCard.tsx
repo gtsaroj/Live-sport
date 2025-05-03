@@ -2,10 +2,15 @@
 
 import { OptimizeImg } from "@/helpers";
 import dayjs from "dayjs";
+import { useRouter } from "next/navigation";
 
 export const UpcomingCard: React.FC<Model.Upcoming> = (match) => {
+  const router = useRouter();
   return (
-    <div className=" flex flex-col items-start justify-between  gap-5  sm:min-w-[300px] min-w-[230px] max-h-[200px]    p-2 rounded-md h-full   bg-gray-900 ">
+    <div
+      onClick={() => router.push(`match/${match?.id}`)}
+      className=" flex flex-col items-start justify-between  gap-5  sm:min-w-[300px] min-w-[230px] max-h-[200px]    p-2 rounded-md h-full   bg-gray-900 "
+    >
       {/* Header */}
       <div className="flex w-full justify-between items-center">
         <span className="sm:text-sm text-[12px] sm:px-1 px-2 py-0.5 bg-green-600 p-0.5 rounded-2xl  text-white  ">

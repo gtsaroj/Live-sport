@@ -1,7 +1,7 @@
 "use client";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 interface CarouselProp {
   props: Model.AdBanner[];
@@ -24,11 +24,11 @@ export const Carousel: React.FC<CarouselProp> = ({
   //   setCurrentSlide(newSlide);
   //   imageRef.current?.classList.add("fade-in");
   // };
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     const newSlide = currentSlide === props.length - 1 ? 0 : currentSlide + 1;
     setCurrentSlide(newSlide);
     imageRef.current?.classList.add("fade-in");
-  };
+  }, [currentSlide, props?.length]);
 
   const removeAnimation = () => {
     imageRef.current?.classList.remove("fade-in");
@@ -37,24 +37,25 @@ export const Carousel: React.FC<CarouselProp> = ({
   const pauseSlider = () => {
     clearInterval(sliderRef.current);
   };
-
-  const autoPlay = () => {
+  const autoPlay = useCallback(() => {
     sliderRef.current = setInterval(
       () => {
         nextSlide();
       },
       time <= 0 ? 3000 : time
     );
-  };
+  }, [nextSlide, time]);
 
   useEffect(() => {
+    const currentImage = imageRef?.current;
     imageRef.current?.addEventListener("animationend", removeAnimation);
     autoPlay();
     return () => {
       pauseSlider();
-      imageRef.current?.addEventListener("animationend", removeAnimation);
+
+      currentImage?.removeEventListener("animationend", removeAnimation);
     };
-  }, [currentSlide]);
+  }, [currentSlide, autoPlay]);
 
   return (
     <div className="relative  w-full h-full   group z-1">

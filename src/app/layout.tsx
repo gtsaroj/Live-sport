@@ -20,6 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/favicon.ico" /> {/* 👈 Add favicon here */}
+        <meta name="description" content={metadata.description} />
+        <title>{metadata.title}</title>
+      </head>
       <body className={`${inter.className} min-h-screen bg-background`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         <div className="flex flex-col min-h-screen">

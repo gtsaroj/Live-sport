@@ -20,7 +20,7 @@ export function MatchGrid({ matches, }: MatchGridProps) {
   }
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1.5 sm:gap-4 px-1 sm:px-0">
+    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-1 gap-1.5 sm:gap-4 px-1 sm:px-0">
     {matches.slice(0, 4).map((match) => (
       <Link prefetch href={`/match/${match.id}`} key={match.id}>
         <Card className="overflow-hidden gap-2 sm:pb-6 pb-2 border rounded-lg pt-0 dark:border-gray-700 border-gray-300 h-full hover:shadow-lg transition-shadow">

@@ -26,12 +26,12 @@ const mockMatches = [
     status: "upcoming",
     image:
       "https://thumbor.prod.vidiocdn.com/d_bT1mEqbMb8pBstQ29-iKVp5jI=/640x360/filters:quality(70)/vidio-web-prod-video/uploads/video/image/8383457/real-betis-vs-espanyol-highlights-laliga-2024-25-3d8164.jpg",
-    matchLink: "https://topembed.pw/channel/TSN4[Canada]",
+    matchLink: "https://cr7tv.github.io/tv/ft.html?id=ssports",
     isViewed: false,
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
     venue: "RCDE Stadium",
-    matchTime: dayjs("2025-05-04T22:15:00").format("HH:mm"),
+    matchTime: dayjs("2025-05-04T22:15:00").format("YYYY-MM-DD HH:mm"),
     goal: 2,
     description: "La Liga clash between Real Madrid and Celta Vigo.",
   },
@@ -52,10 +52,10 @@ const mockMatches = [
     id: "2",
     title: "Sevilla vs Leganes",
     category: "football",
-    status: "upcoming",
+    status: "highlight",
     image:
       "https://www.thestatszone.com/imager/93421/1730374911_b0464c6958.jpg",
-    matchLink: "https://topembed.pw/channel/TSN4[Canada]",
+    matchLink: "https://cr7tv.github.io/tv/ft.html?id=ssports",
     isViewed: false,
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
@@ -130,21 +130,21 @@ const mockMatches = [
       {
         name: "Real Sociedad",
         image:
-          "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/chelsea-vs-arsenal-design-template-1d07729a89b828f53e4ae2b0ff9027b5_screen.jpg?ts=1697612525",
+          "https://imgs.search.brave.com/VkR5FoS5c5yFeBALSosjOizvJf0umR5jPxP2ArzxmGw/rs:fit:100:100:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5hcGktc3BvcnRz/LmlvL2Zvb3RiYWxs/L3RlYW1zLzU0OC5w/bmc",
       },
       {
-        name: "Athletic Bilbao",
+        name: "Athletic Club",
         image:
-          "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/chelsea-vs-arsenal-design-template-1d07729a89b828f53e4ae2b0ff9027b5_screen.jpg?ts=1697612525",
+          "https://imgs.search.brave.com/iGfYGdnZc3Q3-QaE4z40IM0ruNDBHQEZbLGjbCn_81M/rs:fit:100:100:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5hcGktc3BvcnRz/LmlvL2Zvb3RiYWxs/L3RlYW1zLzUzMS5w/bmc",
       },
     ],
     id: "f-upcoming-1",
-    title: "Real Sociedad vs Athletic Bilbao",
+    title: "Real Sociedad vs Athletic Club",
     category: "football",
     status: "upcoming",
     image:
       "https://e00-xlk-ue-marca.uecdn.es/files/article_main_microformat_4_3/uploads/2024/11/23/67421dfc69c08.jpeg",
-    matchLink: "https://example.com/stream/f-upcoming-1",
+    matchLink: "https://cr7tv.github.io/tv/ft.html?id=ssports",
     isViewed: false,
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
@@ -180,7 +180,7 @@ const mockMatches = [
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
     venue: "HPCA Stadium, Dharamsala",
-    matchTime: dayjs("2025-05-04T19:45:00").format("YYYY-MM-DD HH:mm"),
+    matchTime: dayjs("2025-05-04T17:45:00").format("YYYY-MM-DD HH:mm"),
     description: "IPL clash between RCB and CSK.",
   },
   {

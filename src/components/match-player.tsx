@@ -5,7 +5,7 @@ import { useState, useRef } from "react";
 import { Maximize, Minimize } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export function MatchPlayer({match}: {match: any}) {
+export function MatchPlayer({ match }: { match: any }) {
   const [isFullscreen, setIsFullscreen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -26,19 +26,19 @@ export function MatchPlayer({match}: {match: any}) {
     setIsFullscreen(!isFullscreen);
   };
 
-
   return (
     <div
       ref={containerRef}
       className="relative w-full overflow-hidden rounded-lg bg-black"
     >
-<iframe
-  src={match?.matchLink || "https://topembed.pw/channel/SkySportsCricket[UK]"}
-  className="w-full aspect-video"
-  allow="autoplay; encrypted-media"
-  allowFullScreen
-/>
-
+      <iframe
+        src={
+          match?.matchLink || "https://topembed.pw/channel/SkySportsCricket[UK]"
+        }
+        className="w-full aspect-video"
+        allow="autoplay; encrypted-media"
+        allowFullScreen
+      />
 
       <div className="absolute top-0 right-0 p-4">
         <Button

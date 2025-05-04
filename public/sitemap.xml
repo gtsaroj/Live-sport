@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.alllivesports.com/</loc>
+  <lastmod>2025-05-04T17:18:15+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.alllivesports.com/football</loc>
+  <lastmod>2025-05-04T17:18:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.alllivesports.com/cricket</loc>
+  <lastmod>2025-05-04T17:18:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.alllivesports.com/basketball</loc>
+  <lastmod>2025-05-04T17:18:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.alllivesports.com/match/1</loc>
+  <lastmod>2025-05-04T17:18:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.alllivesports.com/match/2</loc>
+  <lastmod>2025-05-04T17:18:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.alllivesports.com/match/f-live-2</loc>
+  <lastmod>2025-05-04T17:18:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.alllivesports.com/match/f-upcoming-1</loc>
+  <lastmod>2025-05-04T17:18:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.alllivesports.com/match/ipl-1</loc>
+  <lastmod>2025-05-04T17:18:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.alllivesports.com/match/b-upcoming-1</loc>
+  <lastmod>2025-05-04T17:18:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

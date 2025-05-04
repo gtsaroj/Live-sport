@@ -23,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        
         <link rel="icon" href="/favicon.ico" /> {/* 👈 Add favicon here */}
         <meta name="description" content={metadata.description} />
         <title>{metadata.title}</title>

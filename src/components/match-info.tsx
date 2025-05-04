@@ -1,9 +1,12 @@
+'use client'
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { CalendarIcon, MapPinIcon } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 import { getSmartMatchTime } from "@/helpers";
 import dayjs from "dayjs";
+import { useState } from "react";
+import { useEffect } from "react";
 
 interface MatchInfoProps {
   match: any;
@@ -11,11 +14,26 @@ interface MatchInfoProps {
 
 export function MatchInfo({ match }: MatchInfoProps) {
   const matchTime = getSmartMatchTime(match?.matchTime);
-  const isMatchNow = dayjs().isAfter(dayjs(match?.matchTime));
-  console.log(isMatchNow);
-  if (isMatchNow) {
-    match.status = "live";
-  }
+  const [isMatchNow, setIsMatchNow] = useState(false);
+
+  useEffect(() => {
+    const checkMatchTime = () => {
+      const matchStartTime = dayjs(match?.matchTime);
+      const matchEndTime = matchStartTime.add(2, 'hour'); // Assuming 2 hour match duration
+      const now = dayjs();
+      
+      setIsMatchNow(now.isAfter(matchStartTime) && now.isBefore(matchEndTime));
+    };
+
+    // Check initially
+    checkMatchTime();
+
+    // Check every minute
+    const timer = setInterval(checkMatchTime, 60000);
+
+    return () => clearInterval(timer);
+  }, [match?.matchTime]);
+
   return (
     <div className="mt-4 sm:mt-6 space-y-4 sm:space-y-6">
       <div className="bg-card rounded-lg sm:rounded-xl p-3 sm:p-6 dark:bg-card">
@@ -50,7 +68,7 @@ export function MatchInfo({ match }: MatchInfoProps) {
                   <span className="text-xl sm:text-2xl font-bold dark:text-white">{match.team[1].goal || 0}</span>
                 </div>
               )} */}
-              {match.status === "upcoming" && (
+              {!isMatchNow && (
                 <div className="text-xs sm:text-sm font-medium text-muted-foreground dark:text-muted-foreground">
                   {matchTime}
                 </div>
@@ -76,7 +94,7 @@ export function MatchInfo({ match }: MatchInfoProps) {
             </div>
           </div>
 
-          {match.status === "live" && (
+          {isMatchNow && (
             <div className="inline-flex items-center px-2 sm:px-3 py-0.5 sm:py-1 rounded-full bg-red-500/10 text-red-500 text-xs sm:text-sm font-medium">
               <span className="relative flex h-1.5 w-1.5 sm:h-2 sm:w-2 mr-1.5 sm:mr-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>

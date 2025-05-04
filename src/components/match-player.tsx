@@ -25,21 +25,20 @@ export function MatchPlayer({match}: {match: any}) {
 
     setIsFullscreen(!isFullscreen);
   };
-  console.log(match);
+
 
   return (
     <div
       ref={containerRef}
       className="relative w-full overflow-hidden rounded-lg bg-black"
     >
-      <iframe
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        src={match?.matchLink || "https://topembed.pw/channel/SkySportsCricket[UK]"}
-        className="w-full aspect-video"
-        allowFullScreen
-        loading="lazy"
-       
-      />
+<iframe
+  src={match?.matchLink || "https://topembed.pw/channel/SkySportsCricket[UK]"}
+  className="w-full aspect-video"
+  allow="autoplay; encrypted-media"
+  allowFullScreen
+/>
+
 
       <div className="absolute top-0 right-0 p-4">
         <Button

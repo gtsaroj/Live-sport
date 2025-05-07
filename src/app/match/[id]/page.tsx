@@ -40,7 +40,7 @@ export default async function MatchPage({
 
           <div>
             <h2 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 dark:text-white">Related Matches</h2>
-            <MatchGrid className="lg:grid-cols-1" matches={relatedMatches} type="related" compact />
+            <MatchGrid className="lg:grid-cols-1  " matches={relatedMatches} type="related" compact />
           </div>
         </div>
       </div>

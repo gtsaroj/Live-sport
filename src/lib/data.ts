@@ -10,6 +10,62 @@ const mockMatches = [
   {
     team: [
       {
+        name: "Al-Nassr",
+        image:
+          "https://ssl.gstatic.com/onebox/media/sports/logos/GWXetBOkODOWR3p2NIBqJg_96x96.png",
+      },
+      {
+        name: "Al-Itthihad",
+        image:
+          "https://ssl.gstatic.com/onebox/media/sports/logos/PEguKntDUcic44Rqa7JdEw_96x96.png",
+      },
+    ],
+    id: "1ijiph87youihuohuh",
+    title: "Al-Nassr VS Al-Itthihad",
+    category: "football",
+    status: "upcoming",
+    image:
+      "https://assets.khelnow.com/news/uploads/2024/12/Al-Ittihad-vs-Al-Nassr.jpg",
+    matchLink: "https://la12hd.com/vivo/canales.php?stream=tntsports",
+    isViewed: false,
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString(),
+    venue: "Al -Awwal Park",
+    matchTime: dayjs("2025-05-07T23:45:00").format("YYYY-MM-DD HH:mm"),
+    goal: 2,
+    description: "Watch Al Nassr vs Al Ittihad LIVE today at 11:45! Get live scores, highlights, lineups, and match analysis. Don’t miss Cristiano Ronaldo & Karim Benzema in this thrilling Saudi Pro League clash!",
+  },
+  {
+    team: [
+      {
+        name: "PSG",
+        image:
+          "https://ssl.gstatic.com/onebox/media/sports/logos/mcpMspef1hwHwi9qrfp4YQ_96x96.png",
+      },
+      {
+        name: "Arsenal",
+        image:
+          "https://ssl.gstatic.com/onebox/media/sports/logos/4us2nCgl6kgZc0t3hpW75Q_96x96.png",
+      },
+    ],
+    id: "1uyuihuihouihui",
+    title: "PSG VS Arsenal",
+    category: "football",
+    status: "upcoming",
+    image:
+      "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/arsenal-vs-paris-saint-germain-champions-leag-design-template-ee4f6009750687a253ba1b8139cfbed4_screen.jpg?ts=1727481659",
+    matchLink: "https://la12hd.com/vivo/canales.php?stream=max1",
+    isViewed: false,
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString(),
+    venue: "Parc des Princes",
+    matchTime: dayjs("2025-05-08T00:45:00").format("YYYY-MM-DD HH:mm"),
+    goal: 2,
+    description: "🔥 LIVE: PSG vs Arsenal – UCL Semi-Final 2nd Leg (Agg: 1-0) – Can Arsenal overturn the deficit? Follow for real-time scores, lineups, highlights & analysis as Dembele-less PSG host the Gunners! ⚽ #UCL #PSGvARS",
+  },
+  {
+    team: [
+      {
         name: "Espanyol",
         image:
           "https://ssl.gstatic.com/onebox/media/sports/logos/TKitIqelDyN6M-kYt4Uc0g_96x96.png",
@@ -141,10 +197,10 @@ const mockMatches = [
     id: "f-upcoming-1",
     title: "Real Sociedad vs Athletic Club",
     category: "football",
-    status: "upcoming",
+    status: "highlight",
     image:
       "https://e00-xlk-ue-marca.uecdn.es/files/article_main_microformat_4_3/uploads/2024/11/23/67421dfc69c08.jpeg",
-    matchLink: "https://cr7tv.github.io/tv/ft.html?id=ssports",
+    matchLink: "https://www.youtube.com/watch?v=qWQCc3z2EpE",
     isViewed: false,
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
@@ -152,9 +208,6 @@ const mockMatches = [
     matchTime: dayjs("2025-05-05T00:45:00").format("YYYY-MM-DD HH:mm"),
     description: "La Liga clash between Real Sociedad and Athletic Bilbao.",
   },
-
-
-
 
   {
     team: [
@@ -172,7 +225,7 @@ const mockMatches = [
     id: "ipl-1",
     title: "PBKS vs LSG",
     category: "cricket",
-    status: "upcoming",
+    status: "highlight",
     image:
       "https://cricxtasy.com/wp-content/uploads/2025/03/lsg_vs_pbks_dream11_prediction.png",
     matchLink: "https://topembed.pw/channel/SkySportsCricket[UK]",
@@ -199,7 +252,7 @@ const mockMatches = [
     id: "b-upcoming-1",
     title: "Houston Rockets vs Golden State Warriors",
     category: "basketball",
-    status: "upcoming",
+    status: "highlight",
     image:
       "https://static.toiimg.com/thumb/resizemode-4,width-1280,height-720,msid-116207394/116207394.jpg",
     matchLink: "https://streamtp4.com/global1.php?stream=espn2",
@@ -210,7 +263,6 @@ const mockMatches = [
     matchTime: dayjs("2025-05-05T06:15:00").format("YYYY-MM-DD HH:mm"),
     description: "NBA clash between Houston Rockets and Golden State Warriors.",
   },
-
 ];
 
 const mockAdBanners = [

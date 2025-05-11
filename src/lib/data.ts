@@ -10,6 +10,34 @@ const mockMatches = [
   {
     team: [
       {
+        name: "Barcelona",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjjEff5OUSLgsahBGM46yHJ7ZY9TaXoVhrUA&s",
+      },
+      {
+        name: "Real Madrid",
+        image:
+          "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/800px-Real_Madrid_CF.svg.png",
+      },
+    ],
+    id: "1ijiph87kjiooyouihuohuh",
+    title: "Barcelona VS Real Madrid",
+    category: "football",
+    status: "upcoming",
+    image:
+      "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/barcelona-vs-real-madrid-design-template-0c03cae56769f9e1a8eef017091f3a59_screen.jpg?ts=1698420692",
+    matchLink: "https://www.youtube.com/embed/DQTsshBwChY?si=Nf_6zoh8y6f0k6yH",
+    isViewed: false,
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString(),
+    venue: "Al -Awwal Park",
+    matchTime: dayjs("2025-05-11T20:00:00").format("YYYY-MM-DD HH:mm"),
+    goal: 2,
+    description: "Watch Al Nassr vs Al Ittihad LIVE today at 11:45! Get live scores, highlights, lineups, and match analysis. Don’t miss Cristiano Ronaldo & Karim Benzema in this thrilling Saudi Pro League clash!",
+  },
+  {
+    team: [
+      {
         name: "Al-Nassr",
         image:
           "https://ssl.gstatic.com/onebox/media/sports/logos/GWXetBOkODOWR3p2NIBqJg_96x96.png",
@@ -23,10 +51,10 @@ const mockMatches = [
     id: "1ijiph87youihuohuh",
     title: "Al-Nassr VS Al-Itthihad",
     category: "football",
-    status: "upcoming",
+    status: "highlight",
     image:
       "https://assets.khelnow.com/news/uploads/2024/12/Al-Ittihad-vs-Al-Nassr.jpg",
-    matchLink: "https://la12hd.com/vivo/canales.php?stream=tntsports",
+    matchLink: "https://www.youtube.com/embed/DQTsshBwChY?si=Nf_6zoh8y6f0k6yH",
     isViewed: false,
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
@@ -51,17 +79,17 @@ const mockMatches = [
     id: "1uyuihuihouihui",
     title: "PSG VS Arsenal",
     category: "football",
-    status: "upcoming",
+    status: "highlight",
     image:
       "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/arsenal-vs-paris-saint-germain-champions-leag-design-template-ee4f6009750687a253ba1b8139cfbed4_screen.jpg?ts=1727481659",
-    matchLink: "https://la12hd.com/vivo/canales.php?stream=max1",
+    matchLink: "https://www.youtube.com/embed/6McCk644UOQ?si=-FLngk8MY6NkaKof",
     isViewed: false,
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
     venue: "Parc des Princes",
     matchTime: dayjs("2025-05-08T00:45:00").format("YYYY-MM-DD HH:mm"),
     goal: 2,
-    description: "🔥 LIVE: PSG vs Arsenal – UCL Semi-Final 2nd Leg (Agg: 1-0) – Can Arsenal overturn the deficit? Follow for real-time scores, lineups, highlights & analysis as Dembele-less PSG host the Gunners! ⚽ #UCL #PSGvARS",
+    description: "In the second leg of the UEFA Champions League 2025 semi-finals, PSG and Arsenal went head to head. PSG secured yet another victory against Arsenal and this time it was at the Parc des Princes. Goals from Ruiz and Hakimi sealed a 2 - 1 win as PSG moved into the finals against Inter. ",
   },
   {
     team: [
@@ -79,10 +107,10 @@ const mockMatches = [
     id: "1",
     title: "Espanyol vs Real Betis",
     category: "football",
-    status: "upcoming",
+    status: "highlight",
     image:
       "https://thumbor.prod.vidiocdn.com/d_bT1mEqbMb8pBstQ29-iKVp5jI=/640x360/filters:quality(70)/vidio-web-prod-video/uploads/video/image/8383457/real-betis-vs-espanyol-highlights-laliga-2024-25-3d8164.jpg",
-    matchLink: "https://cr7tv.github.io/tv/ft.html?id=ssports",
+    matchLink: "https://www.youtube.com/embed/qWQCc3z2EpE?si=eGST0Y8BP-_v6yJz",
     isViewed: false,
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
@@ -111,7 +139,7 @@ const mockMatches = [
     status: "highlight",
     image:
       "https://www.thestatszone.com/imager/93421/1730374911_b0464c6958.jpg",
-    matchLink: "https://cr7tv.github.io/tv/ft.html?id=ssports",
+    matchLink: "https://www.youtube.com/embed/Ha-tdwZJEJw?si=5nzgcPT0-dxKUh0k",
     isViewed: false,
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),

@@ -24,10 +24,14 @@ export function MatchGrid({ matches, className="lg:grid-col-1" }: MatchGridProps
   useEffect(() => {
     const checkMatchTimes = () => {
       const newStatuses = matches.reduce((acc, match) => {
-        acc[match.id] = dayjs().isAfter(dayjs(match.matchTime));
+        if (match.status !== 'highlight') {
+          acc[match.id] = dayjs().isAfter(dayjs(match.matchTime));
+        } else {
+          acc[match.id] = false;
+        }
         return acc;
       }, {} as {[key: string]: boolean});
-      
+       console.log(newStatuses)
       setMatchStatuses(newStatuses);
     };
 

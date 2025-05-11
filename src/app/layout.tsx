@@ -10,9 +10,14 @@ import { Analytics } from "@vercel/analytics/react"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "AllLiveSports - Live Sports Streaming",
-  description:
-    "Watch live, upcoming, and highlight matches across Football, Cricket, and Basketball",
+  title: {
+    default: "AllLiveSports - Live Sports Streaming",
+    template: "%s | AllLiveSports",
+  },
+  description: {
+    default: "Watch live, upcoming, and highlight matches across Football, Cricket, and Basketball",
+    template: "%s | AllLiveSports",
+  },
 };
 
 export default function RootLayout({
@@ -25,8 +30,8 @@ export default function RootLayout({
       <head>
         
         <link rel="icon" href="/favicon.ico" /> {/* 👈 Add favicon here */}
-        <meta name="description" content={metadata.description} />
-        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description?.default} />
+        <title>{metadata.title?.default}</title>
       </head>
       <body className={`${inter.className} min-h-screen bg-background`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>

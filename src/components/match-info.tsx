@@ -12,6 +12,8 @@ interface MatchInfoProps {
   match: any;
 }
 
+
+
 export function MatchInfo({ match }: MatchInfoProps) {
   const matchTime = getSmartMatchTime(match?.matchTime);
   const [isMatchNow, setIsMatchNow] = useState(false);
@@ -24,6 +26,7 @@ export function MatchInfo({ match }: MatchInfoProps) {
       
       setIsMatchNow(now.isAfter(matchStartTime) && now.isBefore(matchEndTime));
     };
+
 
     // Check initially
     checkMatchTime();

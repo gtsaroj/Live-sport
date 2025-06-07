@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        
+
         <link rel="icon" href="/favicon.ico" /> {/* 👈 Add favicon here */}
         <meta name="description" content={metadata.description?.default} />
         <title>{metadata.title?.default}</title>
@@ -36,7 +36,7 @@ export default function RootLayout({
       <body className={`${inter.className} min-h-screen bg-background`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <ClarityInit />
-          <Analytics/>
+          <Analytics />
           <div className="flex flex-col min-h-screen">
             <Header />
             <div className="flex-1">{children}</div>
@@ -44,6 +44,8 @@ export default function RootLayout({
           </div>
         </ThemeProvider>
       </body>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8095278472617735"
+        crossOrigin="anonymous"></script>
     </html>
   );
 }
